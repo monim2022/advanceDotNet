@@ -1,0 +1,12 @@
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\DAL.dll.config
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\DAL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\DAL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.xml
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.pdb

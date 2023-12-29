@@ -1,0 +1,10 @@
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\BLL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\BLL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\DAL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\DAL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\DAL.dll.config
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.pdb
