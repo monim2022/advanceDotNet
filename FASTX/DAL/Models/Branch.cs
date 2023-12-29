@@ -13,9 +13,8 @@ namespace DAL.Models
         public int BranchId { get; set; }
         [Required]
         [StringLength(20)]
-        public int ManagerName { get; set; }
+        public string ManagerName { get; set; }
         [Required]
-        [StringLength(20)]
         public int ManagerId { get; set; }
         public string BranchName { get; set; }
         [Required]

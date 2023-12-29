@@ -12,7 +12,6 @@ namespace DAL.Models
         [Key]
         public int ReturnOrderId { get; set; }
         [Required]
-        [StringLength(20)]
         public int OriginalOrderId { get; set; }
         [Required]
         [StringLength(20)]
@@ -21,7 +20,6 @@ namespace DAL.Models
         [StringLength(20)]
         public string Status { get; set; }
         [Required]
-        [StringLength(20)]
         public int BranchId { get; set; }
     }
 }

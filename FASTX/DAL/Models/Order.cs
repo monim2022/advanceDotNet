@@ -21,10 +21,8 @@ namespace DAL.Models
         [StringLength(20)]
         public string Status { get; set; }
         [Required]
-        [StringLength(20)]
         public int AssignedRiderId { get; set; }
         [Required]
-        [StringLength(20)]
         public int BranchId { get; set; }
     }
 }

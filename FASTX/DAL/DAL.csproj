@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\BranchContext.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\ReturnOder.cs" />
     <Compile Include="Models\Rider.cs" />
