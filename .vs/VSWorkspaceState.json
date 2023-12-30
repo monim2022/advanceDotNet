@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FASTX"
+    "\\FASTX",
+    "\\FASTX\\BLL",
+    "\\FASTX\\DAL\\Models"
   ],
-  "SelectedNode": "\\FASTX\\FASTX.sln",
+  "SelectedNode": "\\FASTX\\BLL\\Class1.cs",
   "PreviewInSolutionExplorer": false
 }

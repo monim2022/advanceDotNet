@@ -10,3 +10,5 @@ D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CoreC
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.dll
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.intiDB.resources
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
