@@ -30,19 +30,19 @@
             }
            for (int i = 0;i<=10; i++)
             {
-                context.Branches.AddOrUpdate(new Models.Order
+                context.Branches.AddOrUpdate(new Models.Branch
                 {
                     BranchId = i,
-                    BranchName= Guid.NewGuid().ToString().Substring(0,10),
+                    BranchName = Guid.NewGuid().ToString().Substring(0,10),
                     ManagerId = i,
-                    Location=Guid.NewGuid().ToString().Substring(0,10),
-                    ManagerName=Guid.NewGuid().ToString().Substring(0,10),
+                    Location = Guid.NewGuid().ToString().Substring(0,10),
+                    ManagerName = Guid.NewGuid().ToString().Substring(0,10),
 
                 });
             }
             for (int i = 0; i <= 10; i++)
             {
-                context.Riders.AddOrUpdate(new Models.Order
+                context.Riders.AddOrUpdate(new Models.Rider
                 {
                     RiderId = i,
                     Name = Guid.NewGuid().ToString().Substring(0, 10),

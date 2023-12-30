@@ -71,3 +71,8 @@ D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\obj\Debug\FASTX.csproj.C
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\obj\Debug\FASTX.csproj.CopyComplete
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\obj\Debug\FASTX.dll
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\obj\Debug\FASTX.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\bin\DAL.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\bin\AutoMapper.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\bin\DAL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\bin\DAL.dll.config
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\FASTX\bin\AutoMapper.xml

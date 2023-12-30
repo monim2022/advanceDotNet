@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class RiderRepo : Repo, IRepo<Rider, string, Rider>
+    internal class RiderRepo : Repo, IRepo<Rider, int, Rider>
     {
         public Rider Create(Rider obj)
         {
@@ -17,9 +17,9 @@ namespace DAL.Repos
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int RiderId)
         {
-            var ex = Read(id);
+            var ex = Read(RiderId);
             db.Riders.Remove(ex);
             return db.SaveChanges() > 0;
         }
@@ -29,17 +29,17 @@ namespace DAL.Repos
             return db.Riders.ToList();
         }
 
-        public Rider Read(string id)
+        public Rider Read(int id)
         {
             return db.Riders.Find(id);
 
         }
 
-        public Rider Update(Rider obj)
+        public Rider Update(Rider id)
         {
-            var ex = Read(obj.Name);
-            db.Entry(ex).CurrentValues.SetValues(obj);
-            if (db.SaveChanges() > 0) return obj;
+            var ex = Read(id.RiderId);
+            db.Entry(ex).CurrentValues.SetValues(id);
+            if (db.SaveChanges() > 0) return id;
             return null;
         }
     }

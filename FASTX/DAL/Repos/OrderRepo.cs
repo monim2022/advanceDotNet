@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class OrderRepo : Repo, IRepo<Order, string, Order>
+    internal class OrderRepo : Repo, IRepo<Order, int, Order>
     {
-        public Order Create(Order obj)
+        public Order Create(Order OrderId)
         {
-            db.Orders.Add(obj);
-            if (db.SaveChanges() > 0) return obj;
+            db.Orders.Add(OrderId);
+            if (db.SaveChanges() > 0) return OrderId;
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             if (ex != null)
@@ -28,25 +28,29 @@ namespace DAL.Repos
             return false;
         }
 
+       
         public List<Order> Read()
         {
             return db.Orders.ToList();  
         }
 
-        public Order Read(string id)
+        public Order Read(int id)
         {
             return db.Orders.Find(id);
         }
 
-        public Order Update(Order obj)  
+       
+        public Order Update(Order OrderId)  
         {
-            var ex = Read(obj.SenderName);
+            var ex = Read(OrderId.OrderId);
             if (ex != null)
             {
-                db.Entry(ex).CurrentValues.SetValues(obj);
-                if (db.SaveChanges() > 0) return obj;
+                db.Entry(ex).CurrentValues.SetValues(OrderId);
+                if (db.SaveChanges() > 0) return OrderId;
             }
             return null;
         }
+
+        
     }
 }

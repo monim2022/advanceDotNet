@@ -15,7 +15,7 @@ namespace DAL
         {
             return new BranchRepo();
         }
-        public static IRepo<Order, string, Order> OrderData()
+        public static IRepo<Order, int, Order> OrderData()
         {
             return new OrderRepo();
         }
@@ -23,11 +23,11 @@ namespace DAL
         {
             return new ReturnOrderRepo();
         }
-        public static IRepo<Rider, string, Rider> RiderData()
+        public static IRepo<Rider, int, Rider> RiderData()
         {
             return new RiderRepo();
         }
-        public static IRepo<Users, string, Users> UsersData()
+        public static IRepo<Users, int, Users> UsersData()
         {
             return new UsersRepo();
         }

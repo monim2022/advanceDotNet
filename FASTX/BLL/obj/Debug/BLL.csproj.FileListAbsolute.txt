@@ -8,3 +8,7 @@ D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CoreC
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.dll
 D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\obj\Debug\BLL.pdb
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\AutoMapper.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\EntityFramework.dll
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\AutoMapper.xml
+D:\advanceDotNet\projectFiles\advanceDotNet\FASTX\BLL\bin\Debug\EntityFramework.xml
