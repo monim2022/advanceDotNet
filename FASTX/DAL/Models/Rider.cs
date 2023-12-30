@@ -18,6 +18,5 @@ namespace DAL.Models
         public int Salary { get; set; }
         [Required]
         public int BranchId { get; set; }
-        // Other rider-related properties
     }
 }

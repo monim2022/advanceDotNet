@@ -30,7 +30,7 @@
             }
            for (int i = 0;i<=10; i++)
             {
-                context.Branches.AddOrUpdate(new Models.Branch
+                context.Branches.AddOrUpdate(new Models.Order
                 {
                     BranchId = i,
                     BranchName= Guid.NewGuid().ToString().Substring(0,10),
@@ -42,7 +42,7 @@
             }
             for (int i = 0; i <= 10; i++)
             {
-                context.Riders.AddOrUpdate(new Models.Rider
+                context.Riders.AddOrUpdate(new Models.Order
                 {
                     RiderId = i,
                     Name = Guid.NewGuid().ToString().Substring(0, 10),
