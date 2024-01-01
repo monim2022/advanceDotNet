@@ -13,11 +13,6 @@ namespace DAL.Models
         [Key]
         public int OrderId { get; set; }
 
-        /*[ForeignKey("Customer")]
-        public int CustomerId { get; set; }
-
-        public virtual User Customer { get; set; }
-        */
         [ForeignKey("Inventory")]
         public int InventoryId { get; set; }
 

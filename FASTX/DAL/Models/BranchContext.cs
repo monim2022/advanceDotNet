@@ -15,5 +15,11 @@ namespace DAL.Models
         public DbSet<ReturnOder> ReturnOrders { get; set; }
         public DbSet<Inventory> Inventories { get; set; }
         public DbSet<Manager> Managers { get; set; }
+        public DbSet<Rider> Riders { get; set; }
+        public DbSet<Package> Packages { get; set; }
+        public DbSet<DeliveryStatus> DeliveryStatuses { get; set; }
+        public DbSet<Token> Tokens { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 }

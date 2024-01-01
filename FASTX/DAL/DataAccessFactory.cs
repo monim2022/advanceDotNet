@@ -35,5 +35,33 @@ namespace DAL
         {
             return new InventoryRepo();
         }
+        public static IRepo<Customer, int, Customer> CoustomerData()
+        {
+            return new CustomerRepo();
+        }
+        public static IAuth AuthData()
+        {
+            return new CustomerRepo();
+        }
+        public static IRepo<Rider, int, Rider> RiderData()
+        {
+            return new RiderRepo();
+        }
+        public static IRepo<Package, int, Package> PackageData()
+        {
+            return new PackageRepo();
+        }
+        public static IRepo<DeliveryStatus, int, DeliveryStatus> DeliveryStatusData()
+        {
+            return new DeliveryStatusRepo();
+        }
+        public static IRepo<Payment, int, Payment> PaymentData()
+        {
+            return new PaymentRepo();
+        }
+        public static IRepo<Token, string, Token> TokenData()
+        {
+            return new TokenRepo();
+        }
     }
 }

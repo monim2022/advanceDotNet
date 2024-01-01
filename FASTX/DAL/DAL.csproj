@@ -53,6 +53,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Enums\Delivery_Status.cs" />
+    <Compile Include="Enums\PaymentStatus.cs" />
+    <Compile Include="Enums\PymentMethod.cs" />
+    <Compile Include="Enums\ShippingMethod.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202401011202207_initDB.cs" />
     <Compile Include="Migrations\202401011202207_initDB.designer.cs">
@@ -62,21 +67,37 @@
     <Compile Include="Migrations\202401011323043_initDB1.designer.cs">
       <DependentUpon>202401011323043_initDB1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401011729484_newEntitiesAdded.cs" />
+    <Compile Include="Migrations\202401011729484_newEntitiesAdded.designer.cs">
+      <DependentUpon>202401011729484_newEntitiesAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\BranchContext.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DeliveryStatus.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Package.cs" />
+    <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\ReturnOder.cs" />
+    <Compile Include="Models\Rider.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\BranchRepo.cs" />
+    <Compile Include="Repos\CustomerRepo.cs" />
+    <Compile Include="Repos\DeliveryStatusRepo.cs" />
     <Compile Include="Repos\InventoryRepo.cs" />
     <Compile Include="Repos\ManagerRepo.cs" />
     <Compile Include="Repos\OrderRepo.cs" />
+    <Compile Include="Repos\PackageRepo.cs" />
+    <Compile Include="Repos\PaymentRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\ReturnOrderRepo.cs" />
+    <Compile Include="Repos\RiderRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\UsersRepo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401011323043_initDB1.resx">
       <DependentUpon>202401011323043_initDB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011729484_newEntitiesAdded.resx">
+      <DependentUpon>202401011729484_newEntitiesAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

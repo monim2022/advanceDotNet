@@ -42,3 +42,4 @@ D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.pdb
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.initDB.resources
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.initDB1.resources
+D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.newEntitiesAdded.resources
