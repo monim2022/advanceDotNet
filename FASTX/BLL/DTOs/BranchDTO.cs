@@ -11,13 +11,16 @@ namespace BLL.DTOs
     {
         public int BranchId { get; set; }
 
-        [Required]
-        public string ManagerName { get; set; }
-        [Required]
-        public int ManagerId { get; set; }
-        [Required]
         public string BranchName { get; set; }
-        [Required]
+
         public string Location { get; set; }
+
+        public string ContactNumber { get; set; }
+
+        public DateTime OpeningTime { get; set; }
+
+        public DateTime ClosingTime { get; set; }
+
+        public bool Is24HourBranch { get; set; }
     }
 }

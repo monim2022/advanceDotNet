@@ -2,18 +2,19 @@
 using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class OrderRepo : Repo, IRepo<Order, int, Order>
+    public class OrderRepo : Repo, IRepo<Order, int, Order>
     {
-        public Order Create(Order OrderId)
+        public Order Create(Order obj)
         {
-            db.Orders.Add(OrderId);
-            if (db.SaveChanges() > 0) return OrderId;
+            db.Orders.Add(obj);
+            if (db.SaveChanges() > 0) return obj;
             return null;
         }
 
@@ -40,15 +41,24 @@ namespace DAL.Repos
         }
 
        
-        public Order Update(Order OrderId)  
+        public Order Update(Order obj)  
         {
-            var ex = Read(OrderId.OrderId);
-            if (ex != null)
-            {
-                db.Entry(ex).CurrentValues.SetValues(OrderId);
-                if (db.SaveChanges() > 0) return OrderId;
-            }
-            return null;
+            var ex = Read(obj.OrderId);
+            
+            if(ex == null) return null;
+
+            //ex.CustomerId = obj.CustomerId;
+            ex.InventoryId = obj.InventoryId;
+            ex.Quantity = obj.Quantity;
+            ex.OrderDate = obj.OrderDate;
+            ex.OrderStatus = obj.OrderStatus;
+            ex.DeliveryAddress = obj.DeliveryAddress;
+            ex.Amount = obj.Amount;
+
+            db.Orders.AddOrUpdate(ex);
+            db.SaveChanges();
+
+            return ex;
         }
 
         

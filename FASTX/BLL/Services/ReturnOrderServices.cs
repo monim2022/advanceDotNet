@@ -12,27 +12,64 @@ namespace BLL.Services
 {
     public class ReturnOrderServices
     {
+        private static readonly IMapper mapper;
+
+        static ReturnOrderServices() 
+        {
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<ReturnOder, ReturnOrderDTO>();
+                c.CreateMap<ReturnOrderDTO, ReturnOder>();
+            });
+            mapper = cfg.CreateMapper();
+        }
         public static List<ReturnOrderDTO> Get()
         {
             var data = DataAccessFactory.ReturnOrderData().Read();
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<ReturnOder, ReturnOrderDTO>();
-            });
-            var mapper = new Mapper(cfg);
             var mapped = mapper.Map<List<ReturnOrderDTO>>(data);
             return mapped;
         }
-        public static ReturnOrderDTO Get(string id)
+
+
+        public static ReturnOrderDTO GetById(int id)
         {
             var data = DataAccessFactory.ReturnOrderData().Read(id);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<ReturnOder, ReturnOrderDTO>();
-            });
-            var mapper = new Mapper(cfg);
             var mapped = mapper.Map<ReturnOrderDTO>(data);
             return mapped;
+        }
+
+        public static ReturnOrderDTO Create(ReturnOrderDTO returnOrderDTO)
+        {
+            var returnOrder = mapper.Map<ReturnOder>(returnOrderDTO);
+            var data = DataAccessFactory.ReturnOrderData().Create(returnOrder);
+            return mapper.Map<ReturnOrderDTO>(data);
+        }
+
+        public static ReturnOrderDTO Update(ReturnOrderDTO returnOrderDTO)
+        {
+            var returnOrder = mapper.Map<ReturnOder>(returnOrderDTO);
+            var data = DataAccessFactory.ReturnOrderData().Update(returnOrder);
+            if (data != null)
+            {
+                return mapper.Map<ReturnOrderDTO>(data);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static bool Delete(int id)
+        {
+            var isSuccess = DataAccessFactory.ReturnOrderData().Delete(id);
+            if (isSuccess)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

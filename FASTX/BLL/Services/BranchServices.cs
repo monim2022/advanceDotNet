@@ -4,36 +4,64 @@ using DAL;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Services
 {
     public class BranchServices
     {
+        private static readonly IMapper mapper;
+
+        static BranchServices()
+        {
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Branch, BranchDTO>();
+                c.CreateMap<BranchDTO, Branch>();
+            });
+            mapper = cfg.CreateMapper();
+        }
+
         public static List<BranchDTO> Get()
         {
             var data = DataAccessFactory.BranchData().Read();
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Branch,BranchDTO>();
-            });
-            var mapper = new Mapper(cfg);
             var mapped = mapper.Map<List<BranchDTO>>(data);
             return mapped;
         }
-        public static BranchDTO Get(string BranchName)
+        
+
+        public static BranchDTO GetById(int id)
         {
-            var data = DataAccessFactory.BranchData().Read(BranchName);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Branch,BranchDTO>();
-            });
-            var mapper = new Mapper(cfg);
+            var data = DataAccessFactory.BranchData().Read(id);
             var mapped = mapper.Map<BranchDTO>(data);
             return mapped;
-
         }
+
+        public static BranchDTO Create(BranchDTO branchDTO)
+        {
+            var branch = mapper.Map<Branch>(branchDTO);
+            var data = DataAccessFactory.BranchData().Create(branch);
+            return mapper.Map<BranchDTO>(data);
+        }
+
+        public static BranchDTO Update(BranchDTO branchDTO)
+        {
+            var branch = mapper.Map<Branch>(branchDTO);
+            var data = DataAccessFactory.BranchData().Update(branch);
+            return mapper.Map<BranchDTO>(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            var isSuccess= DataAccessFactory.BranchData().Delete(id);
+            if (isSuccess)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,15 +12,17 @@ namespace DAL.Models
     {
         [Key]
         public int BranchId { get; set; }
-        [Required]
-        [StringLength(20)]
-        public string ManagerName { get; set; }
-        [Required]
-        public int ManagerId { get; set; }
+
         public string BranchName { get; set; }
-        [Required]
-        [StringLength(100)]
+
         public string Location { get; set; }
-        
+
+        public string ContactNumber { get; set; }
+
+        public TimeSpan OpeningTime { get; set; }
+
+        public TimeSpan ClosingTime { get; set; }
+
+        public bool Is24HourBranch { get; set; }
     }
 }

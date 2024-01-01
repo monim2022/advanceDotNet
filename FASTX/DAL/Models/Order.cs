@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +12,26 @@ namespace DAL.Models
     {
         [Key]
         public int OrderId { get; set; }
-        [Required]
-        [StringLength(20)]
-        public string SenderName { get; set; }
-        [Required]
-        [StringLength(20)]
-        public string ReceiverName { get; set; }
-        [Required]
-        [StringLength(20)]
-        public string Status { get; set; }
-        [Required]
-        public int AssignedRiderId { get; set; }
-        [Required]
-        public int BranchId { get; set; }
+
+        /*[ForeignKey("Customer")]
+        public int CustomerId { get; set; }
+
+        public virtual User Customer { get; set; }
+        */
+        [ForeignKey("Inventory")]
+        public int InventoryId { get; set; }
+
+        public virtual Inventory Inventory { get; set; }
+
+        public int Quantity { get; set; }
+
+        public decimal Amount { get; set; }
+
+        public DateTime OrderDate { get; set; }
+
+        public string DeliveryAddress { get; set; }
+
+        public string OrderStatus { get; set; }
     }
 }
+    

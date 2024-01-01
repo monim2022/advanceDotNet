@@ -2,13 +2,14 @@
 using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class BranchRepo : Repo, IRepo<Branch, string, Branch>
+    public class BranchRepo : Repo, IRepo<Branch, int, Branch>
     {
         public Branch Create(Branch obj)
         {
@@ -17,7 +18,7 @@ namespace DAL.Repos
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             if (ex != null)
@@ -33,20 +34,31 @@ namespace DAL.Repos
             return db.Branches.ToList();
         }
 
-        public Branch Read(string id)
+        public Branch Read(int id)
         {
             return db.Branches.Find(id);
         }
 
         public Branch Update(Branch obj)
         {
-            var ex = Read(obj.BranchName);
-            if (ex != null)
+            var ex = Read(obj.BranchId);
+
+            if (ex == null)
             {
-                db.Entry(ex).CurrentValues.SetValues(obj);
-                if (db.SaveChanges() > 0) return obj;
+                return null;
             }
-            return null;
+
+            ex.BranchName = obj.BranchName;
+            ex.Location = obj.Location;
+            ex.ContactNumber = obj.ContactNumber;
+            ex.OpeningTime = obj.OpeningTime;
+            ex.ClosingTime = obj.ClosingTime;
+            ex.Is24HourBranch = obj.Is24HourBranch;
+
+            db.Branches.AddOrUpdate(ex);
+            db.SaveChanges();
+
+            return ex;
         }
     }
 }

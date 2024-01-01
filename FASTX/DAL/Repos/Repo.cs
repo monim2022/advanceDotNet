@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class Repo
+    public class Repo
     {
-        internal BranchContext db;
-        internal Repo()
+        public BranchContext db;
+        public Repo()
         {
             db = new BranchContext();
         }   

@@ -12,28 +12,58 @@ namespace BLL.Services
 {
     public class UsersServices
     {
+        private static readonly IMapper mapper;
+
+        static UsersServices()
+        {
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<User, UsersDTO>();
+                c.CreateMap<UsersDTO, User>();
+            });
+            mapper = cfg.CreateMapper();
+        }
+
         public static List<UsersDTO> Get()
         {
             var data = DataAccessFactory.UsersData().Read();
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Users, UsersDTO>();
-            });
-            var mapper = new Mapper(cfg);
             var mapped = mapper.Map<List<UsersDTO>>(data);
             return mapped;
         }
-        public static UsersDTO Get(int UsersId)
+
+
+        public static UsersDTO GetById(int id)
         {
-            var data = DataAccessFactory.UsersData().Read(UsersId);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Users, UsersDTO>();
-            });
-            var mapper = new Mapper(cfg);
+            var data = DataAccessFactory.UsersData().Read(id);
             var mapped = mapper.Map<UsersDTO>(data);
             return mapped;
+        }
 
+        public static UsersDTO Create(UsersDTO usersDTO)
+        {
+            var user = mapper.Map<User>(usersDTO);
+            var data = DataAccessFactory.UsersData().Create(user);
+            return mapper.Map<UsersDTO>(data);
+        }
+
+        public static UsersDTO Update(UsersDTO usersDTO)
+        {
+            var user = mapper.Map<User>(usersDTO);
+            var data = DataAccessFactory.UsersData().Update(user);
+            return mapper.Map<UsersDTO>(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            var isSuccess = DataAccessFactory.UsersData().Delete(id);
+            if (isSuccess)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

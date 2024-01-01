@@ -11,7 +11,7 @@ namespace DAL
 {
     public class DataAccessFactory
     {
-        public static IRepo<Branch, string, Branch> BranchData()
+        public static IRepo<Branch, int, Branch> BranchData()
         {
             return new BranchRepo();
         }
@@ -19,17 +19,21 @@ namespace DAL
         {
             return new OrderRepo();
         }
-        public static IRepo<ReturnOder, string, ReturnOder> ReturnOrderData()
+        public static IRepo<ReturnOder, int, ReturnOder> ReturnOrderData()
         {
             return new ReturnOrderRepo();
         }
-        public static IRepo<Rider, int, Rider> RiderData()
-        {
-            return new RiderRepo();
-        }
-        public static IRepo<Users, int, Users> UsersData()
+        public static IRepo<User, int, User> UsersData()
         {
             return new UsersRepo();
+        }
+        public static IRepo<Manager, int, Manager> ManagerData()
+        {
+            return new ManagerRepo();
+        }
+        public static IRepo<Inventory, int, Inventory> InventoryData()
+        {
+            return new InventoryRepo();
         }
     }
 }

@@ -2,13 +2,15 @@
 using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class ReturnOrderRepo : Repo, IRepo<ReturnOder, string, ReturnOder>
+    public class ReturnOrderRepo : Repo, IRepo<ReturnOder, int, ReturnOder>
     {
         public ReturnOder Create(ReturnOder obj)
         {
@@ -17,7 +19,7 @@ namespace DAL.Repos
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             db.ReturnOrders.Remove(ex);
@@ -26,25 +28,34 @@ namespace DAL.Repos
 
         public List<ReturnOder> Read()
         {
-            return db.ReturnOrders.ToList();
+            return db.ReturnOrders
+                .Include(r => r.Order)
+                .ToList();
         }
 
-        public ReturnOder Read(string id)
+        public ReturnOder Read(int id)
         {
-            return db.ReturnOrders.Find(id);
+            return db.ReturnOrders
+                .Include(r => r.Order)
+                .FirstOrDefault(r => r.ReturnId == id);
         }
 
         public ReturnOder Update(ReturnOder obj)
         {
-            var existingReturnOrder = Read(obj.Status);
+            var ex = Read(obj.ReturnId);
 
-            if (existingReturnOrder != null)
-            {
-                db.Entry(existingReturnOrder).CurrentValues.SetValues(obj);
-                if (db.SaveChanges() > 0) return obj;
-            }
+            if(ex == null) return null;
 
-            return null;
+            ex.OrderId = obj.OrderId;
+            ex.ReturnReason = obj.ReturnReason;
+            ex.ReturnDate = obj.ReturnDate;
+            ex.ReturnStatus = obj.ReturnStatus;
+            ex.RefundAmount = ex.Order.Amount;
+
+            db.ReturnOrders.AddOrUpdate(ex);
+            db.SaveChanges();
+
+            return ex;
         }
 
     }
