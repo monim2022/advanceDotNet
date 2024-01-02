@@ -72,29 +72,35 @@
       <DependentUpon>202401011729484_newEntitiesAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\BranchContext.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\DeliveryStatus.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\ManagerSalary.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Package.cs" />
     <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Report.cs" />
     <Compile Include="Models\ReturnOder.cs" />
     <Compile Include="Models\Rider.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\AdminRepo.cs" />
     <Compile Include="Repos\BranchRepo.cs" />
     <Compile Include="Repos\CustomerRepo.cs" />
     <Compile Include="Repos\DeliveryStatusRepo.cs" />
     <Compile Include="Repos\InventoryRepo.cs" />
     <Compile Include="Repos\ManagerRepo.cs" />
+    <Compile Include="Repos\ManagerSalaryRepo.cs" />
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\PackageRepo.cs" />
     <Compile Include="Repos\PaymentRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\ReportRepo.cs" />
     <Compile Include="Repos\ReturnOrderRepo.cs" />
     <Compile Include="Repos\RiderRepo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />

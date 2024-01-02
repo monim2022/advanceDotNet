@@ -21,5 +21,8 @@ namespace DAL.Models
         public DbSet<Token> Tokens { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Report> Reports { get; set; }
+        public DbSet<ManagerSalary> ManagerSalarys { get; set;}
     }
 }

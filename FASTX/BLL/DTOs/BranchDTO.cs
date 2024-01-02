@@ -17,9 +17,9 @@ namespace BLL.DTOs
 
         public string ContactNumber { get; set; }
 
-        public DateTime OpeningTime { get; set; }
+        public TimeSpan OpeningTime { get; set; }
 
-        public DateTime ClosingTime { get; set; }
+        public TimeSpan ClosingTime { get; set; }
 
         public bool Is24HourBranch { get; set; }
     }

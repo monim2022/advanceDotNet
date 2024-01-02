@@ -63,5 +63,17 @@ namespace DAL
         {
             return new TokenRepo();
         }
+        public static IRepo<Admin, int, Admin> AdminData()
+        {
+            return new AdminRepo();
+        }
+        public static IRepo<Report, int, Report> ReportData()
+        {
+            return new ReportRepo();
+        }
+        public static IRepo<ManagerSalary, int, ManagerSalary> ManagerSalaryData()
+        {
+            return new ManagerSalaryRepo();
+        }
     }
 }

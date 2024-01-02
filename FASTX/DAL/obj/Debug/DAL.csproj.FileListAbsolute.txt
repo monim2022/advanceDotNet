@@ -43,3 +43,19 @@ D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.i
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.initDB1.resources
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.newEntitiesAdded.resources
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\DAL.dll.config
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\DAL.dll
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\DAL.pdb
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.dll
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.xml
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.initDB.resources
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.initDB1.resources
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.Migrations.newEntitiesAdded.resources
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.dll
+D:\advanceDotNet\New folder\advanceDotNet\FASTX\DAL\obj\Debug\DAL.pdb
