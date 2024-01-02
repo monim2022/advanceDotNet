@@ -40,3 +40,17 @@ D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CoreC
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\BLL\obj\Debug\BLL.dll
 D:\advanceDotNet\FinalProject\advanceDotNet\FASTX\BLL\obj\Debug\BLL.pdb
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\BLL.dll
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\BLL.pdb
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\AutoMapper.dll
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\DAL.dll
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\EntityFramework.dll
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\DAL.pdb
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\DAL.dll.config
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\AutoMapper.xml
+E:\Advance.net\advanceDotNet\FASTX\BLL\bin\Debug\EntityFramework.xml
+E:\Advance.net\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Advance.net\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Advance.net\advanceDotNet\FASTX\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Advance.net\advanceDotNet\FASTX\BLL\obj\Debug\BLL.dll
+E:\Advance.net\advanceDotNet\FASTX\BLL\obj\Debug\BLL.pdb

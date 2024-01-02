@@ -31,6 +31,12 @@ namespace DAL
         {
             return new ManagerRepo();
         }
+
+        public static IRepo<ManagerSalary, int, ManagerSalary> ManagersalData()
+        {
+            return new ManagerSalaryRepo();
+        }
+
         public static IRepo<Inventory, int, Inventory> InventoryData()
         {
             return new InventoryRepo();

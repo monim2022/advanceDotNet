@@ -49,10 +49,12 @@
     <Compile Include="DTOs\BranchDTO.cs" />
     <Compile Include="DTOs\InventoryDTO.cs" />
     <Compile Include="DTOs\ManagerDTO.cs" />
+    <Compile Include="DTOs\ManagerSalaryDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\ReturnOrderDTO.cs" />
     <Compile Include="DTOs\UsersDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminServices.cs" />
     <Compile Include="Services\BranchServices.cs" />
     <Compile Include="Services\InventoryServices.cs" />
     <Compile Include="Services\ManagerServices.cs" />

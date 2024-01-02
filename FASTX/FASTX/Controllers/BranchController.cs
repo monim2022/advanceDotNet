@@ -63,6 +63,7 @@ namespace FASTX.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { ex.Message });
             }
         }
+
         [HttpPut]
         [Route("api/branch/update/{id}")]
         public HttpResponseMessage Update(int id, [FromBody] BranchDTO branchDTO)

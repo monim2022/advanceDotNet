@@ -15,5 +15,7 @@ namespace DAL.Models
         public DbSet<ReturnOder> ReturnOrders { get; set; }
         public DbSet<Inventory> Inventories { get; set; }
         public DbSet<Manager> Managers { get; set; }
+        public DbSet<ManagerSalary> ManagerSalaries { get; set; }
+
     }
 }

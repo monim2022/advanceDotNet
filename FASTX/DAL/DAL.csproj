@@ -69,6 +69,7 @@
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\ReturnOder.cs" />
+    <Compile Include="Models\ManagerSalary.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\BranchRepo.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\ReturnOrderRepo.cs" />
+    <Compile Include="Repos\ManagerSalaryRepo.cs" />
     <Compile Include="Repos\UsersRepo.cs" />
   </ItemGroup>
   <ItemGroup>
