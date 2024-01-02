@@ -51,6 +51,7 @@
     <Compile Include="DTOs\ManagerDTO.cs" />
     <Compile Include="DTOs\ManagerSalaryDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
+    <Compile Include="DTOs\ReportDTO.cs" />
     <Compile Include="DTOs\ReturnOrderDTO.cs" />
     <Compile Include="DTOs\UsersDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

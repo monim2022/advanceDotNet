@@ -38,6 +38,40 @@ namespace BLL.Services
             return ret;
         }
 
+        public static void CreateReport(ReportDTO ReportDTO)
+        {
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<ReportDTO, Report>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ManagerSalary>(ReportDTO);
+            DataAccessFactory.ManagersalData().Create(mapped);
+        }
+
+
+        public static List<ReportDTO> GetAllReport()
+        {
+            var data = DataAccessFactory.ReportData().Read();
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Report, ReportDTO>();
+            });
+            var mapper = new Mapper(config);
+            var ret = mapper.Map<List<ReportDTO>>(data);
+            return ret;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }

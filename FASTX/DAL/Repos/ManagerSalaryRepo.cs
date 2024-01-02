@@ -26,17 +26,17 @@ namespace DAL.Repos
 
             public List<ManagerSalary> Read()
             {
-                throw new NotImplementedException();
+                return db.ManagerSalaries.ToList();
             }
 
             public ManagerSalary Read(int id)
             {
-                throw new NotImplementedException();
+                return db.ManagerSalaries.Find(id);
             }
 
             public ManagerSalary Update(ManagerSalary obj)
             {
-                throw new NotImplementedException();
+                throw new NotSupportedException();
             }
         }
     

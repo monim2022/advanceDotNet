@@ -12,7 +12,7 @@ namespace FASTX.Controllers
     public class AdminController : ApiController
     {
         [HttpPost]
-        [Route("api/admin/coupon/create")]
+        [Route("api/admin/salary/create")]
         public HttpResponseMessage Create(ManagerSalaryDTO data)
         {
             try
@@ -40,5 +40,39 @@ namespace FASTX.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
             }
         }
+
+        [HttpPost]
+        [Route("api/admin/Reporty/create")]
+        public HttpResponseMessage Create(ReportDTO data)
+        {
+            try
+            {
+                AdminServices.CreateReport(data);
+                return Request.CreateResponse(HttpStatusCode.OK, "Created");
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/admin/Report/all")]
+        public HttpResponseMessage GetAllReport()
+        {
+            try
+            {
+                var data = AdminServices.GetAllReport();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+
+
+
     }
 }

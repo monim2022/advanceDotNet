@@ -41,5 +41,11 @@ namespace DAL
         {
             return new InventoryRepo();
         }
+
+        public static IRepo<Report, int, Report> ReportData()
+        {
+            return new ReportRepo();
+        }
+
     }
 }
